@@ -1,2 +1,2 @@
 # floscript.tmbundle
-TextMate grammars from 
+TextMate grammars for FloScript  
