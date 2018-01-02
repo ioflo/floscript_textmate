@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>scopeName</key>
+    <string>source.floscript</string>
+    
+    <key>fileTypes</key>
+    <array>
+	<string>flo</string>
+    </array>
+    <key>patterns</key>
+    <array>
+	    <dict>
+	    	<key>name</key>
+	    	<string>string.quoted.double.floscript</string>
+	    	<key>begin</key>
+	    	<string>(")</string>
+	    	<key>end</key>
+	    	<string>(")</string>
+			<key>patterns</key>
+		    	<array>
+					<dict>
+			  			<key>name</key> 
+			    		<string>constant.character.escape.floscript</string>
+						<key>match</key>    
+			    		<string>\\.</string>
+					</dict>
+		    	</array>
+		</dict>
+	    <dict>
+			<key>name</key>
+	    	<string>keyword.control.floscript</string>
+	    	<key>match</key>    
+			<string>\b(to|by|with|from|per|for|cum|qua|via|as|at|in|of|on|re|is|if|be|into|and|not|+-)\b</string>
+		</dict>
+	</array>
+</dict>
+</plist>
