@@ -2,9 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>name</key>
+    <string>FloScript</string>
     <key>scopeName</key>
     <string>source.floscript</string>
-    
     <key>fileTypes</key>
     <array>
 	<string>flo</string>
@@ -32,7 +33,7 @@
 			<key>name</key>
 	    	<string>keyword.control.floscript</string>
 	    	<key>match</key>    
-			<string>\b(to|by|with|from|per|for|cum|qua|via|as|at|in|of|on|re|is|if|be|into|and|not|+-)\b</string>
+			<string>\b(to|by|with|from|per|for|cum|qua|via|as|at|in|of|on|re|is|if|be|into|and|not)\b</string>
 		</dict>
 	</array>
 </dict>
