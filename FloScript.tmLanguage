@@ -11,9 +11,11 @@
 	<string>flo</string>
     </array>
     <key>foldingStartMarker</key>
-	<string>^\s*(frame|framer|house)\s+([.a-zA-Z0-9_ &lt;]+)\s*(\((.*)\))?\s*:|\{\s*$|\(\s*$|\[\s*$|^\s*"""(?=.)(?!.*""")</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*$|^\s*\}|^\s*\]|^\s*\)|^\s*"""\s*$</string>
+    <string>^\s*(frame|framer|house)\s+([.a-zA-Z0-9_ &lt;]+)\s*$</string>
+    <key>foldingStopMarker</key>
+    <string>^\s*$|^\s*\}|^\s*\]|^\s*\)|^\s*"""\s*$</string>
+    <key>uuid</key>
+	<string>65862703-14bb-491e-8783-a0e5128d0417</string>
     <key>patterns</key>
     <array>
 	    <dict>
