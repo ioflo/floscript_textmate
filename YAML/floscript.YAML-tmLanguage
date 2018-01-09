@@ -1,0 +1,46 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: FloScript
+scopeName: source.floscript
+fileTypes: [flo]
+uuid: 134e99bb-915a-463c-af1d-1182c95d009e
+foldingStartMarker: ^\s*(frame|framer|house)\s+([.a-zA-Z0-9_ &lt;]+)\s*$
+foldingStopMarker: ^\s*$|^\s*\}|^\s*\]|^\s*\)|^\s*"""\s*$
+
+patterns:
+- name: string.quoted.double.floscript
+  begin: (")
+  end: (")
+  patterns:
+  - name: constant.character.escape.floscript
+    match: \\.
+
+- name: keyword.operator.floscript
+  match: \b(to|by|with|from|per|for|cum|qua|via|as|at|in|of|on|re|is|if|be|into|and|not|\+|\-)\b
+
+- name: comment.line.number-sign.floscript
+  match: (#).*$\n?
+  captures:
+    "1": 
+      name: punctuation.definition.comment.floscript
+
+- name: entity.name.function.floscript
+  match: \b(frame|aux|framer|main|house)\b
+
+- name: storage.modifier.global.floscript
+  match: \b(load|init|server|logger|log|loggee|first|over|under|next|done|timeout|repeat|native|benter|enter|recur|exit|precur|renter|rexit|print|put|inc|copy|set|rear|raze|go|let|do|bid|ready|start|stop|run|abort|use|flo|give|take)\b
+
+- name: keyword.operator.comparison.floscript
+  match: \&lt;\=|&gt;  \=|\=\=|&lt;|&gt;|\!\=
+
+- name: constant.language.floscript  
+  match: \b(true|false)\b
+
+- name: constant.numeric.float.floscript
+  match: \b(?i:)
+
+- name: constant.numeric.integer.decimal.floscript
+  match: \b([1-9]+[0-9]*|0)
+
+
+
