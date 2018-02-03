@@ -7,7 +7,7 @@
 		<string>flo</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>^\s*(frame|framer|house)\s+([.a-zA-Z0-9_ &lt;]+)\s*$</string>
+	<string>^\s*(frame|framer|house)\s+([.a-zA-Z0-9_\s&lt;]+)\s*$</string>
 	<key>foldingStopMarker</key>
 	<string>^\s*$|^\s*\}|^\s*\]|^\s*\)|^\s*"""\s*$</string>
 	<key>name</key>
@@ -65,7 +65,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>&lt;\=|&gt;  \=|\=\=|&lt;|&gt;|\!\=</string>
+			<string>&gt;\=|&lt;\=|\=\=|&lt;|&gt;|\!\=</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.floscript</string>
 		</dict>
